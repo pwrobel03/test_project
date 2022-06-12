@@ -1,0 +1,214 @@
+* {
+    font-family: 'Arial'
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    align-content: center;
+    margin: 0;
+    width: 100%;
+    height: 6em;
+    /* background-color: #161616; */
+    background-image: linear-gradient(to right, #161616, #333);
+    color: white;
+    float: left;
+}
+
+#header2 {
+    position: fixed;
+    display: none;
+    align-content: center;
+    margin: 0;
+    top: 6em;
+    height: 3em;
+    width: 100%;
+    /* background-color: #161616; */
+    background-image: linear-gradient(to right, #161616, #333);
+    color: white;
+    float: left;
+    font-size: 1em;
+    color: #777;
+}
+
+h2 {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+}
+
+#table {
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    left: 1em;
+    bottom: 1em;
+}
+
+/* dialog effects */
+.dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dialog {
+    border-radius: 1em;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+#loginForm {
+    display: none;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(192, 192, 192, 1);
+}
+
+#loginForm h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #333;
+    margin: auto;
+}
+
+#loginForm>div {
+    min-width: 15em;
+    min-height: 3em;
+    margin: 1em;
+    font-size: 1.5em;
+    box-sizing: border-box;
+
+}
+
+#loginForm #login {
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px #333;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    color: #333;
+}
+
+#loginForm .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    float: left;
+    font-size: 2em;
+    box-sizing: border-box;
+}
+
+#loginForm .accept {
+    border-right: 3px solid #333;
+    color: rgba(0, 255, 0, 0.4);
+}
+
+#loginForm .clear {
+    color: rgba(255, 0, 0, 0.4);
+}
+
+#loginForm .accept:hover {
+    background-color: rgba(0, 255, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    transition: 1s;
+}
+
+#loginForm .clear:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    transition: 1s;
+}
+
+.lds-ring {
+    all: revert;
+    display: inline-block;
+    display: flex;
+    width: 40em;
+    height: 40em;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    width: 40em;
+    height: 40em;
+    border: 8px solid;
+    border-radius: 50%;
+    animation: lds-ring 5s cubic-bezier(0.5, 0.5, 0.5, 0.5) infinite;
+    border-color: rgba(200, 200, 200, 1) transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -1s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -2s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -3s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#waiting {
+    background-color: transparent;
+    width: initial;
+    padding: 0;
+    overflow: hidden;
+}
+
+#userMonit {
+    background-color: transparent;
+    width: initial;
+    padding: 0%;
+    overflow: hidden;
+    font-size: 4em;
+    text-align: center;
+    color: #AAA;
+    display: flex;
+}
+
+table .divRound {
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+
+table td {
+    border: 2px solid gray
+}

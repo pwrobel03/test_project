@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-modules": "^1.0.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "ludo1",
+  "version": "1.0.0",
+  "description": "wrobel&hodurek",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "Piotr Wróbel, Bartłomiej Hodurek",
+  "license": "ISC"
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkers</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  <script src="libs/tween.umd.js"></script>
+  <script src="./js/three.js"></script>
+  <script src="./Net.js"></script>
+  <script src="./Ui.js"></script>
+  <script src="./Game.js"></script>
+  <script src="./Main.js"></script>
+  <script src="./Pawn.js"></script>
+  <style>
+    #randomButton {
+      position: absolute;
+      background-color: #161616;
+      color: #f2f2f2;
+      font-size: 1em;
+      padding: 1em 2em;
+      right: 5%;
+      bottom: 5%;
+      z-index: 3;
+      text-transform: capitalize;
+    }
+
+    #alerts {
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <h1 id="userName"></h1>
+    <h2 id="timeLeft"></h2>
+  </div>
+  <div id="header2">
+    <h2 id="alerts"></h2>
+  </div>
+  <div id="container"></div>
+  <button id="randomButton" onclick="game.randomButton()">rzuć kostką</button>
+  <dialog class="dialog" id="loginForm">
+    <div>
+      <h1>Login</h1>
+    </div>
+    <div>
+      <input type="text" name="login" placeholder="Login" id="login">
+    </div>
+    <div>
+      <div class="accept button">Login</div>
+      <div class="clear button">Clear</div>
+    </div>
+  </dialog>
+</body>
+
+</html>
